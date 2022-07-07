@@ -56,33 +56,21 @@ importers:
       ts-jest: 28.0.2_40f9430e77aaf125c3bb106f4dff5ce4
       typescript: 4.6.4
 
-  packages/defs:
-    specifiers:
-      '@sabl/context': ^0.3.3
-      '@sabl/record': ^0.1.0-a04
-    dependencies:
-      '@sabl/context': 0.3.3
-      '@sabl/record': 0.1.0-a04
-
   packages/mock:
     specifiers:
-      '@appex/defs': workspace:*
       '@appex/model': workspace:*
       '@sabl/context': ^0.3.3
       '@sabl/record': ^0.1.0-a04
     dependencies:
-      '@appex/defs': link:../defs
       '@appex/model': link:../model
       '@sabl/context': 0.3.3
       '@sabl/record': 0.1.0-a04
 
   packages/model:
     specifiers:
-      '@appex/defs': workspace:*
       '@sabl/context': ^0.3.3
       '@sabl/record': ^0.1.0-a04
     dependencies:
-      '@appex/defs': link:../defs
       '@sabl/context': 0.3.3
       '@sabl/record': 0.1.0-a04
 
