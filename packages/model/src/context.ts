@@ -1,5 +1,5 @@
+import type { Repository } from './defs';
 import { IContext, Context, withValue, Maybe } from '@sabl/context';
-import { Repository } from './defs';
 
 const ctxKeyRepo = Symbol('repo');
 
