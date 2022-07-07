@@ -1,0 +1,35 @@
+{
+  "name": "@appex/defs",
+  "version": "0.1.0",
+  "description": "Record definitions for example application",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "pwsh -File ../../.scripts/clean.ps1",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "jest --coverage true --coverageReporters text",
+    "test:view": "pwsh -File ../../.scripts/test.ps1 -View -Pretty",
+    "test:refresh": "pwsh -File ../../.scripts/test.ps1 -Render -Pretty",
+    "cbt": "pnpm clean && pnpm build && pnpm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libsabl/ex-js-dal",
+    "directory": "packages/defs"
+  },
+  "contributors": [
+    ""
+  ],
+  "dependencies": {
+    "@sabl/context": "^0.3.3",
+    "@sabl/record": "^0.1.0-a04"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "files": [
+    "tsconfig.json",
+    "src/**/*",
+    "dist/**/*"
+  ]
+}
